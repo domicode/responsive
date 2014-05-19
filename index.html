@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Media Queries</title>
+  <meta name="viewport" content="initial-scale=1,width=device-width">
+
+
+  <style type="text/css">
+    
+    html, body {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      font-size: 18px;
+      font-family: sans-serif;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .container {
+      width: 75%; 
+      background-color: tomato;
+      /*centering elements*/
+      margin: 0 auto;
+      overflow: auto;
+      max-width: 950px;
+    }
+
+    .news {
+      width: 100%;
+      color: white;
+    }
+
+    .news > p {
+      font-size: 1rem;
+    }
+
+    @media screen and (min-width: 640px) {
+      .news {
+        float: left; 
+        width: 50%;
+      }
+    }
+
+    @media screen and (min-width: 940px) {
+      .news {
+        float: left;
+        width: 33.33333333333333%;
+      }
+    }
+
+
+  </style>
+
+
+</head>
+  <body>
+    <div class="container">
+    <img src="http://placehold.it/950x300">
+      <article class="news">
+        <h1>Title 1</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </article>
+      <article class="news">
+        <h1>Title 2</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </article>  
+      <article class="news">
+        <h1>Title 3</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </article> 
+      <article class="news">
+        <h1>Title 4</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </article> 
+    </div>  
+  </body>
+</html>
